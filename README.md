@@ -12,6 +12,7 @@
 - Modularization through preprocessing
 - Modularization of the server
 - Built-in Authentication & Authorization Middlewares (Passport.js)
+  - local auth and facebook auth integrated
 - Bootstrap
 - Templatecache Support
 - Own i18n module built on angular-translate (cp-ng-translate)
@@ -36,6 +37,8 @@ $ cd boilerplate
 $ npm install
 $ gulp dev
 ```
+
+For more security you should alter your session key in server/sessionsecret.js to another arbitrary string.
 
 ### Directory Structure
 

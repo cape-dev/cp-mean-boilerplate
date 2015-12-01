@@ -27,6 +27,3 @@ logs
 pids
 *.pid
 *.seed
-
-# Session Secret
-server/sessionsecret.js
