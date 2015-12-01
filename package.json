@@ -1,10 +1,7 @@
 {
-  "name": "symkeyval",
+  "name": "CP MEAN Boilerplate",
   "version": "0.0.1",
-  "author": "Can Pekesen <can@pekesen.de>",
-  "contributors": [
-    "Philippe Skolka <philippe@skolka.de>"
-  ],
+  "author": "Can Pekesen",
   "description": "symkeyval",
   "keywords": [
     "express",

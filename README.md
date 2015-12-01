@@ -2,7 +2,7 @@
 
 ## work in progress
 
-### This boilerplate includes:
+### This boilerplate includes
 
 - Full MEAN Stack usage (MongoDB, ExpressJS, AngularJS & NodeJS)
 - Gulp task manager (complete build task which transpiles and bundles the code, starts a server and watches all files -> watchify)
@@ -18,47 +18,65 @@
 - Karma, Jasmine
 - Less as main styling language
 - Express Sessions stored in MongoDB
-- ESLint
+- ESLint 
 
-### Directory Structure:
+### Installation
 
-app (whole code)
+You need Gulp installed globally:
 
-app/js (main coding dir)
+```sh
+$ npm install -g gulp
+```
 
-app/misc (translation files)
+```sh
+$ git clone https://github.com/kamekazemaster/cp-mean-boilerplate.git boilerplate
+$ cd boilerplate
+$ npm install
+$ gulp dev
+```
 
-app/styles
+### Directory Structure
 
-app/images
+- app (whole code)
+- app/js (main coding dir)
+- app/misc (translation files)
+- app/styles
+- app/images
+- build (all files the server is serving to the clients, created during gulp build)
+- gulp
+- server
+- logs (created from "unit" or "lint" task)
 
-build (all files the server is serving to the clients, created during gulp build)
 
-gulp
-
-server
-
-logs (created from "unit" or "lint" task)
-
-
-### Gulp Tasks:
-dev
--> starts the full build process including the server
-
-server
--> just starts the server
-
-unit
--> starts chrome and executes all unit tests
-
-unit --type chrome OR firefox OR safari OR ie OR phantom OR all
--> starts corresponding browser(s) and executes all unit tests
+### Gulp Tasks
+ 
+```sh
+$ gulp dev
+**starts the full build process including the server**
+```
+```sh
+$ gulp server
+**just starts the server**
+```
+```sh
+$ gulp unit
+**starts chrome and executes all unit tests**
+```
+```sh
+$ gulp unit --type chrome OR firefox OR safari OR ie OR phantom OR all
+**starts corresponding browser(s) and executes all unit tests**
+```
+```sh
+$ gulp lint
+**lints all files corresponding to the gulp/config.js file with eslint (eslint config is in .eslintrc file)**
+```
 
 There are several more tasks which are executed bei the "dev" task. Look in to gulp/tasks for the other ones.
-For more information on setup look into gulp/config.js file.
+
+*For more information on setup look into gulp/config.js file.*
 
 
-### File naming:
+### File naming
 
 There are several conventions in this boilerplate which should be sticked to for the gulp processes.
 
@@ -67,3 +85,7 @@ There are several conventions in this boilerplate which should be sticked to for
 - Templatecache -> *.cache.html
 - Unit tests -> *.spec.js or *.spec.es6
 
+License
+----
+
+MIT
