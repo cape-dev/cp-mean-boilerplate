@@ -47,6 +47,24 @@ $ gulp dev
 - server
 - logs (created from "unit" or "lint" task)
 
+### Server
+
+The server follows the principle of modularization.
+The main server is the server/server.js file which loads all additional server files.
+These are logically seperated in **modules** and **extension**.
+To choose which file to load and additionally define a name for these module/extension for injecting in other files please refer to
+server/config.json *(order of the entries matters!!!)*
+
+Modules are server modules which extend the api of the server. That means that all
+modules are aware of the http server object.
+
+Extensions are modules which only add functionality to the server. They do *NOT* alter the server api.
+Therefore they are *NOT* aware of the http server object.
+
+### Mongo Usermodel
+
+see server/extensions/usermodel.js for more information
+
 
 ### Gulp Tasks
  
