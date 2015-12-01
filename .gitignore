@@ -1,0 +1,32 @@
+# Mac Files
+.DS_Store
+
+#webstorm
+.idea
+
+# Dependency directories
+node_modules
+
+# build directory
+build
+src/app/js/templatecache.js
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# preprocessed main.js
+src/app/js/main.js
+
+# Temp files
+*~
+
+# Log files
+logs
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Session Secret
+server/sessionsecret.js

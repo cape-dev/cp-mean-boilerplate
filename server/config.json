@@ -1,0 +1,41 @@
+{
+  "server": {
+    "port": 8080,
+    "path": "server",
+    "modules": [
+      {"module": "static", "file": "modules/static"},
+      {"module": "logout", "file": "modules/logout"},
+      {"module": "local-signup", "file": "modules/local-signup"},
+      {"module": "local-signin", "file": "modules/local-signin"},
+      {"module": "facebook", "file": "modules/facebook"},
+      {"module": "angular", "file": "modules/angular"}
+    ],
+    "extensions": [
+      {"extension": "mongoDB", "file": "extensions/mongodb"},
+      {"extension": "userModel", "file": "extensions/usermodel"},
+      {"extension": "passport", "file": "extensions/passport"},
+      {"extension": "passport-local", "file": "extensions/passport-local"},
+      {"extension": "passport-facebook", "file": "extensions/passport-facebook"}
+    ]
+  },
+  "translations": {
+    "path": "../app/misc/i18n"
+  },
+  "databases": {
+    "user": "mongodb://localhost:27017/userDatabase"
+  },
+  "userModel": {
+    "salt_work_factor": 13,
+    "max_login_attempts": 5,
+    "lock_time_10_min": 600000
+  },
+  "session": {
+    "maxAge": 86400000
+  },
+  "facebookAuth": {
+    "clientID": "1630397060554096",
+    "clientSecret": "86f955dcaee6be34a962c30cd7b88601",
+    "callbackURLPathname": "/auth/facebook/callback",
+    "callbackURLBase": "localhost:8080"
+  }
+}
