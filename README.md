@@ -22,6 +22,8 @@
 
 ### Installation
 
+You need MongoDB installed and started locally
+
 You need Gulp installed globally:
 
 ```sh
