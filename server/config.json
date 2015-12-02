@@ -4,6 +4,7 @@
     "path": "server",
     "modules": [
       {"module": "static", "file": "modules/static"},
+      {"module": "translations", "file": "modules/translations"},
       {"module": "logout", "file": "modules/logout"},
       {"module": "local-signup", "file": "modules/local-signup"},
       {"module": "local-signin", "file": "modules/local-signin"},

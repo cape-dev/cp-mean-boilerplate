@@ -1,8 +1,16 @@
 {
-  "name": "CP MEAN Boilerplate",
+  "name": "CP-MEAN-Boilerplate",
   "version": "0.0.1",
-  "author": "Can Pekesen",
-  "description": "symkeyval",
+  "author": {
+    "name": "Can Pekesen"
+  },
+  "contributors": [],
+  "description": "full MEAN stack boilerplate - this boilerplate has nearly everything to kickstart a project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamekazemaster/cp-mean-boilerplate.git"
+  },
+  "license": "MIT",
   "keywords": [
     "express",
     "gulp",
@@ -12,7 +20,6 @@
     "jasmine",
     "mongoose"
   ],
-  "private": true,
   "engines": {
     "node": ">=0.10.26"
   },

@@ -15,7 +15,7 @@
   - local auth and facebook auth integrated
 - Bootstrap
 - Templatecache Support
-- Own i18n module built on angular-translate (cp-ng-translate)
+- Own i18n module built on angular-translate
 - Karma, Jasmine
 - Less as main styling language
 - Express Sessions stored in MongoDB

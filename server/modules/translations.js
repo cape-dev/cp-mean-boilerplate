@@ -14,7 +14,6 @@ function Translations(server, config, logFunc) {
 
   server.put('/addTranslation', function(req, res) {
     var translationId = req.body.translationId;
-    logFunc('[x] missing translation added: ' + translationId);
     
     var mainDir = path.dirname(require.main.filename);
     var pathToFiles = path.resolve(mainDir, config.translations.path);
@@ -22,10 +21,11 @@ function Translations(server, config, logFunc) {
       return updateTranslationFiles(dir);
     })
       .then(function() {
+        logFunc('[x] missing translation added: ' + translationId);
         res.sendStatus(200)
       })
       .catch(function(err) {
-        console.log(err);
+        logFunc(err);
         res.sendStatus(500);
       });
 
