@@ -42,14 +42,14 @@ For more security you should alter your session key in server/sessionsecret.js t
 
 ### Directory Structure
 
-- app (whole code)
+- app (whole frontend code)
 - app/js (main coding dir)
 - app/misc (translation files)
 - app/styles
 - app/images
 - build (all files the server is serving to the clients, created during gulp build)
 - gulp
-- server
+- server (whole backend code)
 - logs (created from "unit" or "lint" task)
 
 ### Server
