@@ -94,7 +94,7 @@ $ gulp lint
 **lints all files corresponding to the gulp/config.js file with eslint (eslint config is in .eslintrc file)**
 ```
 
-There are several more tasks which are executed bei the "dev" task. Look in to gulp/tasks for the other ones.
+There are several more tasks which are executed from the "dev" task. Look in to gulp/tasks for the other ones.
 
 *For more information on setup look into gulp/config.js file.*
 
